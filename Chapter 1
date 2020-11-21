@@ -1,0 +1,62 @@
+#unit1
+
+##1-3
+
+```
+
+/*华氏摄氏温度转换表*/
+
+#include <stdio.h>
+
+main( ) {
+     float f, c, stt, end, stp;
+     stt = 0;
+     end = 400;
+     stp = 10;
+     f = stt;
+     printf("f\t\tc\n");
+     while (f <= end) {
+         c = (f - 32) * (5.0 / 9.0);
+         printf("%3.0f\t%6.1f\n", f, c); /*%3.0 三字符宽 小数点后无*/
+         f += 1.0;
+     }
+ }
+
+```
+
+/f浮点  /d整型参数
+
+##1-5
+
+```
+
+#include <stdio.h>
+
+main( ) {
+     float f, c, stt, end, stp;
+
+    printf("f\t\tc\n");
+     for (f = 400; f >= 0; f -= 1)
+         printf("%3f\t%6f\n", f, (f - 32) * (5.0 / 9.0));
+
+}
+
+##define
+
+```
+
+#include <stdio.h>
+ #define Stt 0    /*首字母大写，无分号*/
+ #define END 400
+ #define STp 1
+
+main( ) {
+     float f, c, stt, end, stp;
+
+    printf("f\t\tc\n");
+     for (f = END; f >= Stt; f -= 1)
+         printf("%3f\t%6f\n", f, (f - 32) * (5.0 / 9.0));
+
+}
+
+```
