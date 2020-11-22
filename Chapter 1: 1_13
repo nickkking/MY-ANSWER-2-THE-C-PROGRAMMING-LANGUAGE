@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+main() {
+	int  c, lg[12], i;
+	for (c = 0; c < 12; ++c)
+		lg[c] = 0;
+	while ((i = getchar()) != EOF)
+		if (i >= 'a' && i <= 'z' || i <= 'Z' && i >= 'A')
+			printf("#");
+
+		else
+			printf("\n");
+
+
+
+}
