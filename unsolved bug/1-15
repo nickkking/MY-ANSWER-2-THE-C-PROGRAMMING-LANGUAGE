@@ -1,0 +1,12 @@
+#include <stdio.h>
+int transfc (int f);
+
+int main() {
+	int c, f;
+	f = getchar();
+	printf("celcius=%d", transfc(f));
+}
+
+int transfc(int f) {
+	return 	(f - 32) * 5 / 9;
+}
