@@ -1,0 +1,28 @@
+#include <stdio.h>
+int  n, c;//没有反馈
+char l[100], ne[100];
+
+int reverse(int i, char[]);
+
+main() {
+	int i;
+	for (i = 0; (c = getchar()) != EOF != '\n'; i++)
+		l[i] = c;
+	if (i > 0)
+		printf("%s", reverse(i - 1, l));
+	printf("%s", ne);
+}
+
+int reverse(int, char l[]) {
+	int i;
+	while (i >= 0) {
+		n = 0;
+		ne[n] = l[i];
+		n++;
+		i--;
+	}
+	ne[n] = '\n';
+	ne[n + 1] = '\0';
+	return ne[n + 1];
+
+}
