@@ -1,4 +1,4 @@
-```
+```C
 #include <stdio.h>
 int  n, c;
 char l[100], ne[100];
