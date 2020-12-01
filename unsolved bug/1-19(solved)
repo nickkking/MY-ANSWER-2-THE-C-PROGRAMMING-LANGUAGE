@@ -6,7 +6,7 @@ int reverse(int i, char[]);
 
 main() {
 	int i;
-	for (i = 0; (c = getchar()) != EOF != '\n'; i++)
+	for (i = 0; (c = getchar()) != EOF != '\n'; i++)//缺少逻辑运算符！！！！
 		l[i] = c;
 	if (i > 0)
 		printf("%s", reverse(i - 1, l));
@@ -16,7 +16,7 @@ main() {
 int reverse(int, char l[]) {
 	int i;
 	while (i >= 0) {
-		n = 0;
+		n = 0;//放到循环外！！！！！！！！！！！
 		ne[n] = l[i];
 		n++;
 		i--;
