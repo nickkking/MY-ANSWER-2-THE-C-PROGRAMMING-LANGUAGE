@@ -1,4 +1,5 @@
 ```c++
+
 #include <stdio.h>
 int  n, c;
 char l[100], ne[100];
@@ -27,4 +28,5 @@ int reverse(int i, char l[]) {
 	return 0;
 
 }
+
 ```
